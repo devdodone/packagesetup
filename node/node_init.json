@@ -1,3 +1,14 @@
-mkdir projectname
-cd projectname
-npm init
+//mkdir projectname
+//cd projectname
+//npm init
+npm run version:patch
+
+"devDependencies": {
+	"coffee-script": "^1.9.3"
+},
+
+"scripts": {
+  "start"           : "node index.js",
+	"compile:coffee" : "coffee --compile --output ./lib ./src/coffeescripts",
+	"compile": "npm run compile:coffee"
+}
